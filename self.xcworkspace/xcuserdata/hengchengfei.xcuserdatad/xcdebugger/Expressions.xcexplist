@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[WCreateCollectionViewController textFieldDidChange:]:WCreateCollectionViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[WTabViewController tabBar:didSelectItem:]:WTabViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UIPlaceHolderTextView drawRect:]:UIPlaceHolderTextView.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[WCreateCollectionViewController didTakePicture:image:]:WCreateCollectionViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ParamsUtils combineParams:]:ParamsUtils.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[WHCollectionViewController collectionView:cellForItemAtIndexPath:]:WHCollectionViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "data.attachs[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WCreateCollectionViewController close:]:WCreateCollectionViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController.tabBarController.selectedIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__39-[SCCaptureSessionManager takePicture:]_block_invoke:SCCaptureSessionManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[WCreateViewController imagePickerController:didFinishPickingMediaWithInfo:]:WCreateViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__38-[WHCollectionViewController loadData]_block_invoke154:WHCollectionViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[WTabViewController tabBarController:didSelectViewController:]:WTabViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[WCreateCollectionViewController uploadImage]:WCreateCollectionViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__46-[WCreateCollectionViewController uploadImage]_block_invoke:WCreateCollectionViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

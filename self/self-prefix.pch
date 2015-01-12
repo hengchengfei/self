@@ -1,0 +1,87 @@
+//
+//  self-prefix.pch
+//  self
+//
+//  Created by hengchengfei on 14/12/14.
+//  Copyright (c) 2014年 hcf. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+//以后定义类时,不需要再导入下面两个类了
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#define DEFINE_SINGLETON_FOR_HEADER(className) \
+\
++ (className *)shared##className
+
+#define DEFINE_SINGLETON_FOR_CLASS(className)\
+\
++ (className *)shared##className { \
+static className *shared##className =nil;\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+shared##className = [[self alloc]init];\
+}); \
+return shared##className; \
+}
+
+//...##__VA_ARGS__可变参数，一定要加上else，否则在release和发布时会找不到方法而奔溃
+//#ifdef DEBUG
+//#define DLog(fmt,...) NSLog((@"%s [Line %d] " fmt),__PRETTY_FUNCTION__,__LINE__,##__VA_ARGS__);
+//#else
+//#define DLog(...)
+//#endif
+
+// Debug Logging
+#if 1 // Set to 1 to enable debug logging
+#define DLog(fmt,...) NSLog((@"%s [Line %d] " fmt),__PRETTY_FUNCTION__,__LINE__,##__VA_ARGS__);
+#else
+#define DLog(...)
+#endif
+
+#define iPhone4 CGSizeEqualToSize([UIScreen mainScreen].bounds.size,CGSizeMake(320, 480))
+#define iPhone5 CGSizeEqualToSize([UIScreen mainScreen].bounds.size,CGSizeMake(320, 568))
+#define iPhone6 CGSizeEqualToSize([UIScreen mainScreen].bounds.size,CGSizeMake(375, 667))
+#define iPhone6plus CGSizeEqualToSize([UIScreen mainScreen].bounds.size,CGSizeMake(414, 736))
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define kAppStoreFormat @"https://itunes.apple.com/cn/app/shan-zu/id%ld?mt=8"
+
+
+//颜色设置
+#define MColorHomeBgd 0xEFEFEF //首页正文背景色
+#define MColorNavBgd 0x000000 //导航栏背景色
+#define MColorSegBgd 0xF8F8F8 //首页顶层segment背景色
+#define MColorSegTxt 0xC9C5C5 //首页顶层segment文字背景色
+#define MColorSegTxtSelected 0x666666 //首页顶层segment背景色
+#define MColorSegSplit 0xF8F8F8 //首页顶层segment分割线颜色
+#define MColorTagBgd 0xF1F0EE //标签背景色
+#define MColorTagTxt 0x6A6A6A //标签文字颜色
+
+#define kNotificationCamera @"kNotificationCamera"
+
+#define WScreenSize [[UIScreen mainScreen]bounds].size
+#define wLastTabItem @"lastTabItem"
+
+//第三方
+#define __WeiboAppKey__ @"624120311"
+#define __WeiboRedictUrl__ @"https://api.weibo.com/oauth2/default.html"
+
+//#define WURLServer @"http://192.168.1.100:8080/self-app"
+#define WURLServer @"http://121.40.31.90:8080/self-app"
+#define WURLCommonParams @{@"source":@"ios",}
+#define WURLGetLatestContents [NSString stringWithFormat:@"%@/content/getLatestContents.json",WURLServer]
+#define WURLGetGoodContents [NSString stringWithFormat:@"%@/content/getGoodContents.json",WURLServer]
+#define WURLGetTopics [NSString stringWithFormat:@"%@/topic/getTopics.json",WURLServer]
+#define WURLGetHotTopics [NSString stringWithFormat:@"%@/topic/getHotTopics.json",WURLServer]//热门话题
+#define WURLGetUploadToken [NSString stringWithFormat:@"%@/qiniu/getUploadToken.json",WURLServer]
+#define WURLCallBackUpload [NSString stringWithFormat:@"%@/qiniu/callBackUpload.json",WURLServer]
+

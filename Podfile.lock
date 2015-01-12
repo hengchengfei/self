@@ -1,0 +1,118 @@
+PODS:
+  - AFNetworking (2.5.0):
+    - AFNetworking/NSURLConnection (= 2.5.0)
+    - AFNetworking/NSURLSession (= 2.5.0)
+    - AFNetworking/Reachability (= 2.5.0)
+    - AFNetworking/Security (= 2.5.0)
+    - AFNetworking/Serialization (= 2.5.0)
+    - AFNetworking/UIKit (= 2.5.0)
+  - AFNetworking/NSURLConnection (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.0)
+  - AFNetworking/Security (2.5.0)
+  - AFNetworking/Serialization (2.5.0)
+  - AFNetworking/UIKit (2.5.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMScrollingNavbar (1.1.1)
+  - AMTagListView (0.4.2)
+  - AnimatedGIFImageSerialization (0.2.0)
+  - CocoaLumberjack (2.0.0-beta4):
+    - CocoaLumberjack/Default (= 2.0.0-beta4)
+    - CocoaLumberjack/Extensions (= 2.0.0-beta4)
+  - CocoaLumberjack/Core (2.0.0-beta4)
+  - CocoaLumberjack/Default (2.0.0-beta4):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0-beta4):
+    - CocoaLumberjack/Default
+  - FontAwesome+iOS (0.1.4)
+  - JSONModel (1.0.1)
+  - MRProgress (0.8.0):
+    - MRProgress/ActivityIndicator (= 0.8.0)
+    - MRProgress/Blur (= 0.8.0)
+    - MRProgress/Circular (= 0.8.0)
+    - MRProgress/Icons (= 0.8.0)
+    - MRProgress/NavigationBarProgress (= 0.8.0)
+    - MRProgress/Overlay (= 0.8.0)
+  - MRProgress/ActivityIndicator (0.8.0):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.0):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.0):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.0)
+  - MRProgress/Icons (0.8.0)
+  - MRProgress/NavigationBarProgress (0.8.0):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.0):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.0)
+  - MRProgress/Stopable (0.8.0):
+    - MRProgress/Helper
+  - NZCircularImageView (0.0.5):
+    - UIActivityIndicator-for-SDWebImage (~> 1.2)
+  - PPiAwesomeButton (1.5.2):
+    - FontAwesome+iOS
+  - PPiFlatSegmentedControl (1.4.0):
+    - PPiAwesomeButton
+  - Qiniu (7.0.6):
+    - AFNetworking (~> 2.0)
+  - Reachability (3.1.1)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+  - SevenSwitch (1.4.0)
+  - Toast (2.4)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+  - UzysAnimatedGifPullToRefresh (0.9.3):
+    - AnimatedGIFImageSerialization (~> 0.2.0)
+
+DEPENDENCIES:
+  - AMScrollingNavbar (~> 1.1.1)
+  - AMTagListView
+  - CocoaLumberjack (~> 2.0.0-beta4)
+  - JSONModel (~> 1.0.1)
+  - MRProgress (~> 0.8.0)
+  - NZCircularImageView (~> 0.0.5)
+  - PPiFlatSegmentedControl (~> 1.4.0)
+  - Qiniu (~> 7.0.6)
+  - Reachability (~> 3.1)
+  - SDWebImage (~> 3.7.1)
+  - SevenSwitch (~> 1.4.0)
+  - Toast (~> 2.4)
+  - UzysAnimatedGifPullToRefresh (~> 0.9.3)
+
+SPEC CHECKSUMS:
+  AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
+  AMScrollingNavbar: 2d96aa21472d85fe3d350f657841c300eaebc0b0
+  AMTagListView: b8753b41bc81c5fb4a1f225fd7e8f5dc3f24649e
+  AnimatedGIFImageSerialization: ee2b8f04ec1143dd196cac160a7b119753891825
+  CocoaLumberjack: 24153b24b17d853d7182b22b128971fb98e8cb18
+  FontAwesome+iOS: 816c20304edef4ca92835de669577005cbaaf261
+  JSONModel: 634100aaacbd89811bc8a03da209356e5989c569
+  MRProgress: 2b65d6ec30a5d08b55efd3ceb3e714a5c6c9a28b
+  NZCircularImageView: 5c92097f2df91f561c501724a4f2dc64841a6ad0
+  PPiAwesomeButton: 9c57f5b72e3a36eaa4f5b811fbdb90913e5cdb21
+  PPiFlatSegmentedControl: 50e7a033ea2084661a77398ac6e721f852444c18
+  Qiniu: 5f70ceaa3133ff3c368990bc99b595a3d155b010
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  SevenSwitch: 2f6832907b4f0d4eeb61e2a24acb1e28f6f8c059
+  Toast: 6a3c2b1d70e426b26d130971c369670eac7aa9ce
+  UIActivityIndicator-for-SDWebImage: 8bd92c15280fbe54816448c6b14674145eee05c7
+  UzysAnimatedGifPullToRefresh: cb3b37cdf3c7807db2103b4fa306988558c8296f
+
+COCOAPODS: 0.35.0
